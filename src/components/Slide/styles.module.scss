@@ -1,0 +1,60 @@
+.container{
+    max-width: 700px;
+    margin: auto;
+
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    border: 1px solid #c6c9ca;
+    border-radius: 12px;
+    height: 144px;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 28px 38px 28px 30px;
+    background: #fff;
+    margin-top: 40px;
+    
+
+    div{
+        display: flex;
+        align-items: center; 
+        span{
+            margin-right: 5px;
+        }
+    }
+
+    h2{
+        color: #263238;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+
+       
+
+    }
+
+    p{
+    color: #5d7a89;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+    }
+    
+    .customDot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ffffff; // Cor de fundo das bolinhas
+        margin: 0 5px; // Espaçamento entre as bolinhas
+      
+      }
+      
+      .activeDot{
+        background-color: #ff0000; // Cor de fundo da bolinha ativa
+      } 

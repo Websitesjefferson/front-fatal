@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  width: 100%;
+  padding-left: 60px;
+}
+
+.card ul {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.card li {
+  text-align: start;
+  margin-top: 5px;
+  list-style: none;
+  color: #263238;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: Montserrat, sans-serif;
+}
+
+.card p {
+  text-align: start;
+  color: #263238;
+  font-size: 15.5px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 32px;
+  max-width: 380px;
+  font-family: Montserrat, sans-serif;
+}
+
+.container h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #263238;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 380px;
+  text-transform: uppercase;
+  text-align: start;
+  padding-left: 60px;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    padding-left: initial;
+    justify-content: center;
+  }
+
+  .container h2 {
+    padding-left: initial;
+  }
+
+  .card:nth-child(2) {
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .card:nth-child(3) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+
+    li {
+      border-right: 1px solid black;
+      display: flex;
+      padding-inline: 5px;
+      font-size: 14px;
+    }
+  }
+}
