@@ -33,7 +33,7 @@ export default function Home() {
           <div className={styles.check}>
           
            <div>
-           <input type="checkbox" />
+           <input style={{marginRight: 10}} type="checkbox" />
            <p>Mantenha-me conectado</p>
            </div>
            <Captcha />
@@ -57,10 +57,10 @@ export default function Home() {
      </div>
      
        <footer className={styles.footerContainer}>
-               
+             <div className={styles.divContainer}>  
                <Image className={styles.Logo} src={Logo} alt="Logo"/>
                 <p>Copyright 2023 © Fatal Model.</p>
-                
+              </div>
       </footer>
         
     </>

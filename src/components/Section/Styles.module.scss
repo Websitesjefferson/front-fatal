@@ -2,16 +2,21 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  align-items: center;
+ 
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 380px;
+  justify-content: center;
+ 
+  
   width: 100%;
   padding-left: 60px;
 }
+
+
 
 .card ul {
   margin-top: 20px;
@@ -19,8 +24,12 @@
   gap: 20px;
 }
 
-.card li {
+
+.card  a {
   text-align: start;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
   margin-top: 5px;
   list-style: none;
   color: #263238;
@@ -28,7 +37,60 @@
   font-weight: 400;
   line-height: 24px;
   font-family: Montserrat, sans-serif;
+  transition: all 300ms;
+
+  span{
+    margin-right: 5px;
+  }
 }
+
+
+
+.card a {
+  position: relative;
+  display: inline-block;
+  margin-right: 5px; /* Ajuste o espaçamento entre as palavras conforme necessário */
+}
+
+.card a span {
+  position: relative;
+}
+
+.card a span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background-color: #000; // Cor da linha
+  transform: scaleX(0); // A linha não será visível inicialmente
+  transition: transform 0.3s ease;
+}
+
+.card a:hover span::after {
+  transform: scaleX(1); // A linha será exibida ao passar o mouse
+}
+
+.card  {
+  position: relative;
+}
+
+.card div::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 70px;
+  width: 0.1px;
+  height: 50%;
+  background-color: #5d7a89; // Cor da linha
+  opacity: 0.2;
+  
+}
+
+
+
+
 
 .card p {
   text-align: start;
@@ -55,6 +117,18 @@
 }
 
 @media screen and (max-width: 900px) {
+
+  .card div::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 70px;
+    width: 0.1px;
+    height: 0;
+    background-color: #5d7a89; // Cor da linha
+    opacity: 0.2;
+    
+  }
   .container {
     flex-direction: column;
   }
@@ -73,7 +147,7 @@
     align-items: center;
     margin-top: 10px;
 
-    li {
+    a {
       margin-bottom: 10px;
     }
   }
@@ -86,9 +160,10 @@
     justify-content: center;
     gap: 10px;
 
-    li {
+    a {
       border-right: 1px solid black;
       display: flex;
+      height: 10px;
       padding-inline: 5px;
       font-size: 14px;
     }
