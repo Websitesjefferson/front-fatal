@@ -116,7 +116,7 @@
   padding-left: 60px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
 
   .card div::after {
     content: "";
@@ -131,6 +131,8 @@
   }
   .container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .card {
@@ -168,4 +170,17 @@
       font-size: 14px;
     }
   }
+}
+@media screen and (max-width: 1100px){
+.card div::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 70px;
+  width: 0.1px;
+  height: 0;
+  background-color: #5d7a89; // Cor da linha
+  opacity: 0.2;
+  
+}
 }

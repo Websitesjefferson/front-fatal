@@ -1,0 +1,142 @@
+.textMenu {
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  padding-b: 20px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  p {
+    margin-top: 2px;
+
+  }
+}
+.containerLinks{
+  padding-inline: 20px;
+}
+.containerLinks div:nth-child(1){
+  margin-top: -65px;
+  display: flex;
+  align-items: center;
+  padding-block: 20px;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #cddce4;
+  
+}
+.containerLinks div:nth-child(2){
+  display: flex;
+  align-items: center;
+  padding-block: 20px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #cddce4;
+}
+.containerLinks div button span{
+  margin-right: 15px;
+}
+
+.linksWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.navButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.linksWrapper a,
+.navButton,
+.navMenuWrapper a {
+  color: var(--white);
+  text-align: center;
+  padding: 0 0.5rem;
+  display: inline-block;
+  position: relative;
+  transition: color 0.7s;
+  font-size: 16px;
+
+  &:hover {
+    color: var(--gray-100);
+  }
+
+}
+
+.navMenuWrapper a {
+  color: var(--white);
+}
+
+.navButton button,
+.navMenuWrapper button {
+  margin-left: 30px;
+  background: transparent;
+  border: 0;
+  transition: transform 0.8s;
+
+  &:hover {}
+}
+
+.navMenu {
+
+ display: none;
+}
+
+.navMenuWrapper {
+  position: fixed;
+  background: #eceff1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  width: 100%;
+  height: 100%;
+  top: 60px;
+  left: 0;
+  text-align: center;
+  padding-top: 80px;
+  z-index: 99;
+}
+.footer{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top:75%;
+  bottom: 0;
+}
+.footer h3{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.navMenuWrapper a {
+  margin: 1rem 0;
+  text-decoration: none;
+}
+
+.navMenuWrapperButton {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .linksWrapper {
+    display: none;
+  }
+
+
+
+  .navMenuWrapper button {
+    margin: 0;
+  }
+
+  .navMenu {
+    display: flex;
+  }
+
+
+}
+
+
+

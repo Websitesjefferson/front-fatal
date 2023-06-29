@@ -1,21 +1,22 @@
-import { useContext, useState } from "react";
+
 import styles from "./styles.module.scss";
-
-
 import { ImLocation2 } from "react-icons/im";
 import {BiSolidChevronDown} from 'react-icons/bi'
 import Logo from '../../assets/Logo.png'
-
 import Image from "next/image";
 import React from "react";
+import {Menu} from '../menu'
 
 export function Header() {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  
+
+ 
   return (
     <>
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
         <div className={styles.div}>
+          <Menu />
          <Image className={styles.Logo} src={Logo} alt="logo"/>
        </div>
          <div className={styles.containerInput}>
@@ -33,7 +34,7 @@ export function Header() {
           <input type="text" placeholder="Selecionar cidade" />
     </div>
 
-     
+    
     </>
   );
 }

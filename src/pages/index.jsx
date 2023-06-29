@@ -4,9 +4,8 @@ import { Captcha } from "@/components/captcha";
 import {Header} from '../components/Header'
 import  SliderComponent  from "../components/Slide";
 import { Section } from "../components/Section";
-
+import { Menu } from "@/components/menu";
 import Logo from '../assets/Logo.png'
-
 import Image from "next/image";
 
 export default function Home() {
@@ -15,16 +14,18 @@ export default function Home() {
      <Header />
 
      <div className={styles.container}>
-        
+       
         <div className={styles.form}></div>
         
-
+          
 
         <form action="">
           <h1>Faça seu login</h1>
           <input type="text" placeholder='Digite seu e-mail' />
-
+         
           <input type="text" placeholder='Digite sua senha' />
+          
+          
         </form>
 
           <a className={styles.link} href="#">Esqueci minha senha</a>
@@ -34,8 +35,10 @@ export default function Home() {
           
            <div>
            <input style={{marginRight: 10}} type="checkbox" />
-           <p>Mantenha-me conectado</p>
+           <p>Mantenha-me conectado</p> 
+           
            </div>
+           
            <Captcha />
            
            </div>
