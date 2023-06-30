@@ -78,8 +78,9 @@ const Form = () => {
   };
 
   return (
+    <>
     <form className={styles.form}>
-      <h1>Faça seu login</h1>
+      <h1 className={styles.h1}><b>Faça seu login</b> </h1>
       <div className={emailContainerClasses}>
         <animated.div
           className={`${styles.placeholder} ${emailFocused ? styles.focused : ''} ${isEmailEmpty ? styles.empty : ''}`}
@@ -113,6 +114,7 @@ const Form = () => {
         </button>
       </div>
     </form>
+    </>
   );
 };
 
