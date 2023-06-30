@@ -6,11 +6,10 @@ import Logo from '../../assets/Logo.png'
 import Image from "next/image";
 import React from "react";
 import {Menu} from '../menu'
+import { Option } from "..//registrationOption";
+import { OptionLogin } from "../loginOption";
 
 export function Header() {
-  
-
- 
   return (
     <>
     <header className={styles.headerContainer}>
@@ -24,9 +23,10 @@ export function Header() {
           <input type="text" placeholder="Selecionar cidade" />
         </div>
 
-         <button className={styles.text} style={{color: '#e25352'}}>CADASTRE-SE GRÁTIS <p><BiSolidChevronDown size={18} color="#e25352"/></p></button>
+         <Option />
+        
 
-         <button className={styles.text} style={{color: '#263238'}}>LOGIN <p><BiSolidChevronDown size={18} color="#263238"/></p></button>
+         <OptionLogin />
       </div>
     </header>
     <div className={styles.SearchContainer} >

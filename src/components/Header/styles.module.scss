@@ -2,7 +2,6 @@
   padding: 10px;
   background: #eceff1;
   box-shadow: 0 0 10px rgba(0, 0, 0, .4);
-  transition: transform .3s ease;
   width: 100%;
   
  
@@ -15,6 +14,7 @@
     width: 135px;
     height: 25px;
     margin: auto;
+   
    }
 }
 
@@ -23,10 +23,10 @@
 }
 
 .headerContent {
-  max-width: 1112px;
+  max-width: 1215px;
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  gap: 20px;
   align-items: center;
 
 
@@ -45,12 +45,14 @@
 
 
 .containerInput {
-  width: 500px;
-  height: 36px;
+  width: 100%;
+ max-width: 600px;
+  height: 40px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   background: #fff;
+  
 
 
 
@@ -80,9 +82,9 @@
   border-radius: 8px;
   padding: 10px;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 16px;
   font-family: 'Montserrat', sans-serif;
-  transition: all 300ms;
+ 
 
   p {
     margin-top: 2px;
@@ -94,8 +96,15 @@
   }
 
 @media screen and (max-width: 1000px) {
-
+  .headerContainer{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    
+  }
   .headerContent{
+    
   .containerInput {
 
     display: none;
@@ -103,6 +112,7 @@
  .Logo {
   width: 150px;
   height: 35px;
+
    
 
 
@@ -115,12 +125,14 @@
   .SearchContainer{
     display: block;
     width: 100%;
-    height: 36px;
+    height: 40px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     background: #fff;
-  
+   position: fixed;
+   top: 7.5%;
+   z-index: 1;
   
   
   input {
@@ -129,7 +141,7 @@
     padding-block: 10px;
     padding-left: 10px;
     border: none;
-    border-radius: 5px;
+    
   
     color: #5d7a89;
     font-size: 14px;

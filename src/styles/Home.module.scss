@@ -3,6 +3,7 @@
     margin: auto;
     text-align: center;
     padding-inline: 20px;
+    padding-top: 100px;
    
     main {
         text-align: start;
@@ -173,7 +174,13 @@
    
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
+   
+    .container{
+        margin-top: 20px;
+      
+    }
+
 
     .footerContainer{
         height: 70px;
