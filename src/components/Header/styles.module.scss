@@ -11,8 +11,8 @@
    flex: 1;
 
    .Logo{
-    width: 135px;
-    height: 25px;
+    width: 150px;
+    height: 30px;
     margin: auto;
    
    }
@@ -46,31 +46,37 @@
 
 .containerInput {
   width: 100%;
- max-width: 600px;
-  height: 40px;
+  max-width: 650px;
+  height: 36px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   background: #fff;
+  margin-right: 20px;
   
 
 
 
   input {
     width: 100%;
-    max-width: 500px;
+    border: none;
     padding-block: 10px;
     padding-left: 10px;
     border: none;
     border-radius: 5px;
-
     color: #5d7a89;
     font-size: 14px;
+    outline: none;
+  }
+  input:placeholder-shown{
+    margin-left: 22px;
   }
 
-  span {
 
-    margin-left: 5px;
+  .location{
+    position: absolute;
+    left: 20.5%;
+    margin-right: 10px;
   }
 }
 
@@ -97,10 +103,9 @@
 
 @media screen and (max-width: 1000px) {
   .headerContainer{
-    position: fixed;
-    top: 0;
+    
     width: 100%;
-    z-index: 9;
+   
     
   }
   .headerContent{
@@ -130,9 +135,8 @@
     display: flex;
     align-items: center;
     background: #fff;
-   position: fixed;
-   top: 7.5%;
-   z-index: 1;
+   
+  
   
   
   input {
@@ -141,7 +145,7 @@
     padding-block: 10px;
     padding-left: 10px;
     border: none;
-    
+    outline: none;
   
     color: #5d7a89;
     font-size: 14px;
@@ -201,4 +205,84 @@
 
 .text:hover {
   color: #ccc;
+}
+
+.modal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding-block: 10px;
+  border-bottom: 0.1px solid #b4d3e2;
+}
+.modal div{
+  display: flex;
+  align-items: center;
+  
+ 
+}
+.modal button{
+  border: none;
+  background-color: transparent;
+}
+.modal div span:nth-child(2){
+  margin-left: 5px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+.modalInput {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid black;
+}
+.modalInput input{
+  border: none;
+  width: 100%;
+  padding-block: 15px;
+  outline: none;
+  font-size: 16px;
+
+}
+.modalLocation {
+  
+  display: flex;
+  align-items: center; 
+  margin: auto;
+  max-width: 98%;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 0.1px solid #b4d3e2;
+}
+.modalLocation button{
+  color: #5d7a89;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+ 
+  vertical-align: middle;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  background-color: transparent;
+  margin-left: 15px;
+
+}
+
+.modalFooter{
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+.modalFooter span a{
+  color: #5d7a89;
+   
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 90%;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
 }

@@ -3,7 +3,7 @@
   font-size: 18px;
   font-weight: 600;
   border: none;
-  padding-b: 20px;
+  padding: 20px;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
   p {
@@ -76,12 +76,12 @@
   border: 0;
   transition: transform 0.8s;
 
-  &:hover {}
 }
+
 
 .navMenu {
  position: absolute;
- top: 10%;
+ top: 0;
  display: none;
 }
 
@@ -136,7 +136,7 @@
     display: flex;
   }
 
-
+ 
 }
 
 

@@ -7,6 +7,7 @@ import { Section } from "../components/Section";
 import { Menu } from "@/components/menu";
 import Logo from '../assets/Logo.png'
 import Image from "next/image";
+import Form from "@/components/Input";
 
 export default function Home() {
   return (
@@ -15,20 +16,11 @@ export default function Home() {
 
      <div className={styles.container}>
        
-        <div className={styles.form}></div>
         
-          
+        
+          <Form />
 
-        <form action="">
-          <h1>Faça seu login</h1>
-          <input type="text" placeholder='Digite seu e-mail' />
-         
-          <input type="text" placeholder='Digite sua senha' />
-          
-          
-        </form>
-
-          <a className={styles.link} href="#">Esqueci minha senha</a>
+    <a className={styles.link} href="#">Esqueci minha senha</a>
 
 
           <div className={styles.check}>
@@ -44,7 +36,7 @@ export default function Home() {
            </div>
            <button className={styles.button}>Entrar</button>
 
-           <p className={styles.p}>Quero me cadastrar</p>
+           <a href="#" className={styles.p}>Quero me cadastrar</a>
 
 
          <SliderComponent />
@@ -53,7 +45,7 @@ export default function Home() {
            
           <Section />
 
-          <main>CNPJ: 37.181.811/0001-46</main>
+          <main className={styles.content}><span>CNPJ: 37.181.811/0001-46</span> </main>
 
         
           
